@@ -1,4 +1,7 @@
-﻿using System.Windows.Input;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Windows.Input;
 using TidshanteringDyskalkyli.ViewModel;
 using Xamarin.Forms;
 
@@ -127,11 +130,38 @@ namespace TidshanteringDyskalkyli.Pages
                 {
                     var timeToParse = TimeEntry.Text;
 
+                    try
+                    {
                     var timeObject = TimeParser.ParseTime(timeToParse, vm.AM);
-                    CalculatedTimeLabel.Text = timeObject.DispalyString;
+                        CalculatedTimeLabel.Text = timeObject.DispalyString;
 
-                    vm.Hour = int.Parse(timeObject.Hour);
-                    vm.Minute = int.Parse(timeObject.Minute);
+                        vm.Hour = int.Parse(timeObject.Hour);
+                        vm.Minute = int.Parse(timeObject.Minute);
+                    }
+                    catch (Exception)
+                    {
+                            Device.BeginInvokeOnMainThread(() =>
+                            {
+                                Dictionary<int, string> inputs = new Dictionary<int, string>()
+                                {
+                                    [1] = "fem i halv sju",
+                                    [2] = "kvart i nio",
+                                    [3] = "tio över fyra",
+                                    [4] = "kvart över 12"
+                                };
+                                
+                                var number = new Random().Next(1,4);
+                                var collectedPair = inputs.FirstOrDefault(pair => pair.Key == number);
+
+
+                                DisplayAlert("Kunde inte förstå texten",
+                                    "Testa skriv: " + collectedPair.Value, "OK");
+
+                                TimeEntry.Text = "";
+                                TimeEntry.Placeholder = collectedPair.Value;
+                            });
+                    }
+                    
                 });
             }
         }

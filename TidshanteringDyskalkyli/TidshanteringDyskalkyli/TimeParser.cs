@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace TidshanteringDyskalkyli
 {
@@ -56,86 +58,97 @@ namespace TidshanteringDyskalkyli
 
         public static TimeReturnObject ParseTime(string time, bool isAM)
         {
-            isHalv = null;
-            beforeTime = false;
-            minuteSet = false;
-            Hour = null;
-            Minute = null;
-
-            var timeLower = time.ToLower();
-
-            var split = timeLower.Split(" ".ToCharArray());
-
-            foreach (var timeString in split)
+            try
             {
-                if (timeString == "halv")
-                {
-                    isHalv = true;
-                }
 
-                else if (timeString == "i")
-                {
-                    beforeTime = true;
-                }
+                isHalv = null;
+                beforeTime = false;
+                minuteSet = false;
+                Hour = null;
+                Minute = null;
 
-                else if (timeString == "över")
+                var timeLower = time.ToLower();
+
+                var split = timeLower.Split(" ".ToCharArray());
+
+                foreach (var timeString in split)
                 {
-                    beforeTime = false;
-                }
-                else
-                {
-                    var number = CheckIfNumber(timeString);
-                    if (number != null && Minute == null)
+                    if (timeString == "halv")
                     {
-                        Minute = number;
+                        isHalv = true;
                     }
-                    else if(number != null && Minute != null)
+
+                    else if (timeString == "i")
                     {
-                        Hour = number;
+                        beforeTime = true;
+                    }
+
+                    else if (timeString == "över")
+                    {
+                        beforeTime = false;
+                    }
+                    else
+                    {
+                        var number = CheckIfNumber(timeString);
+                        if (number != null && Minute == null)
+                        {
+                            Minute = number;
+                        }
+                        else if (number != null && Minute != null)
+                        {
+                            Hour = number;
+                        }
                     }
                 }
+
+                int intDecimalMinute = int.Parse(Minute);
+                int intDecimaalHour = int.Parse(Hour);
+
+                if (isHalv == true)
+                {
+                    intDecimalMinute += 30;
+                    intDecimaalHour--;
+                }
+
+                if (beforeTime == true)
+                {
+                    intDecimalMinute -= int.Parse(Minute) * 2;
+                }
+
+                if (intDecimalMinute < 0)
+                {
+                    intDecimaalHour--;
+                    intDecimalMinute += 60;
+                }
+
+                if (!isAM)
+                {
+                    intDecimaalHour += 12;
+                }
+
+                var stringReturnRepresentationOfHourInt = AdjustHourString(intDecimaalHour);
+                var stringReturnRepresnationOfMinuteInt = intDecimalMinute.ToString();
+
+                var timeReturnObject = new TimeReturnObject
+                {
+
+                    Hour = stringReturnRepresentationOfHourInt,
+                    Minute = stringReturnRepresnationOfMinuteInt,
+                    DispalyString = stringReturnRepresentationOfHourInt + ":" + stringReturnRepresnationOfMinuteInt
+                };
+
+                return timeReturnObject;
+
+
+
             }
-
-            int intDecimalMinute = int.Parse(Minute);
-            int intDecimaalHour = int.Parse(Hour);
-
-            if (isHalv == true)
+            catch (Exception e)
             {
-                intDecimalMinute+=30;
-                intDecimaalHour--;
+                Debug.WriteLine("Could not parse Text");
+                Debug.WriteLine(e.Message);
+                throw;
             }
-
-            if (beforeTime == true)
-            {
-                intDecimalMinute -= int.Parse(Minute) * 2;
-            }
-
-            if (intDecimalMinute < 0)
-            {
-                intDecimaalHour--;
-                intDecimalMinute += 60;
-            }
-
-            if (!isAM)
-            {
-                intDecimaalHour += 12;
-            }
-
-            var stringReturnRepresentationOfHourInt = AdjustHourString(intDecimaalHour);
-            var stringReturnRepresnationOfMinuteInt = intDecimalMinute.ToString();
-
-            var timeReturnObject = new TimeReturnObject
-            {
-
-                Hour = stringReturnRepresentationOfHourInt,
-                Minute = stringReturnRepresnationOfMinuteInt,
-                DispalyString = stringReturnRepresentationOfHourInt + ":" + stringReturnRepresnationOfMinuteInt
-            };
-           
-            return timeReturnObject;
-
-
-
+            
         }
 
         private static string AdjustHourString(int oldhour)
