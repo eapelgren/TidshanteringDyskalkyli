@@ -1,2 +1,2 @@
 # TidshanteringDyskalkili
-Tidshanteings App för folk med dyskalkili
+Tidshanteings App för folk med dyskalkyli
