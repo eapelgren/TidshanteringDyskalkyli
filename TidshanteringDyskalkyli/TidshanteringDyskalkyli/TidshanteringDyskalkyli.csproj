@@ -37,6 +37,7 @@
   <ItemGroup>
     <Compile Include="App.cs" />
     <Compile Include="ClockView.cs" />
+    <Compile Include="Colors.cs" />
     <Compile Include="Controls\MyTimePicker.cs" />
     <Compile Include="Pages\TimeEstimatorPage.cs" />
     <Compile Include="Pages\TimeTranslatePage.cs" />

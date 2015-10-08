@@ -174,6 +174,1569 @@
       <Private>True</Private>
     </Reference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\adjust.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\adn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\align-center.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\align-justify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\align-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\align-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\ambulance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\anchor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\android.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\angellist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\angle-double-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\angle-double-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\angle-double-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\angle-double-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\angle-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\angle-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\angle-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\angle-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\apple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\archive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\area-chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\arrow-circle-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\arrow-circle-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\arrow-circle-o-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\arrow-circle-o-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\arrow-circle-o-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\arrow-circle-o-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\arrow-circle-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\arrow-circle-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\arrow-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\arrow-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\arrow-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\arrow-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\arrows-alt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\arrows-h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\arrows-v.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\arrows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\asterisk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\at.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\backward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\ban.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\bar-chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\barcode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\bars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\bed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\beer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\behance-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\behance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\bell-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\bell-slash-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\bell-slash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\bell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\bicycle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\binoculars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\birthday-cake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\bitbucket-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\bitbucket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\bolt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\bomb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\bookmark-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\bookmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\briefcase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\btc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\bug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\building-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\building.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\bullhorn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\bullseye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\bus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\buysellads.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\calendar-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\camera-retro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\car.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\caret-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\caret-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\caret-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\caret-square-o-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\caret-square-o-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\caret-square-o-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\caret-square-o-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\caret-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\cart-arrow-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\cart-plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\cc-amex.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\cc-discover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\cc-mastercard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\cc-paypal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\cc-stripe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\cc-visa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\cc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\certificate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\chain-broken.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\check-circle-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\check-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\check-square-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\check-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\chevron-circle-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\chevron-circle-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\chevron-circle-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\chevron-circle-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\chevron-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\chevron-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\chevron-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\chevron-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\child.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\circle-o-notch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\circle-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\circle-thin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\clipboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\cloud-download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\cloud-upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\code-fork.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\code.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\codepen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\coffee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\cog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\cogs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\columns.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\comment-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\comment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\comments-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\comments.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\compass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\compress.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\connectdevelop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\copyright.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\credit-card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\crop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\crosshairs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\css3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\cube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\cubes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\cutlery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\dashcube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\database.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\delicious.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\desktop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\deviantart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\diamond.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\digg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\dot-circle-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\dribbble.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\dropbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\drupal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\eject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\ellipsis-h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\ellipsis-v.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\empire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\envelope-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\envelope-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\envelope.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\eraser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\eur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\exchange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\exclamation-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\exclamation-triangle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\expand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\external-link-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\external-link.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\eye-slash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\eyedropper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\facebook-official.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\facebook-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\fast-backward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\fast-forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\fax.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\female.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\fighter-jet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\file-archive-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\file-audio-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\file-code-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\file-excel-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\file-image-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\file-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\file-pdf-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\file-powerpoint-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\file-text-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\file-text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\file-video-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\file-word-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\files-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\film.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\filter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\fire-extinguisher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\fire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\flag-checkered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\flag-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\flask.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\flickr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\floppy-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\folder-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\folder-open-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\folder-open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\font.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\forumbee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\foursquare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\frown-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\futbol-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\gamepad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\gavel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\gbp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\gift.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\git-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\git.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\github-alt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\github-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\github.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\glass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\globe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\google-plus-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\google-plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\google-wallet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\google.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\graduation-cap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\gratipay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\h-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\hacker-news.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\hand-o-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\hand-o-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\hand-o-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\hand-o-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\hdd-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\header.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\headphones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\heart-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\heartbeat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\hospital-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\html5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\ils.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\inbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\indent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\info-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\inr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\instagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\ioxhost.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\italic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\joomla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\jpy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\jsfiddle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\keyboard-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\krw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\language.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\laptop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\lastfm-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\lastfm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\leaf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\leanpub.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\lemon-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\level-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\level-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\life-ring.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\lightbulb-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\line-chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\link.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\linkedin-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\linkedin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\linux.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\list-alt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\list-ol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\list-ul.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\location-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\long-arrow-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\long-arrow-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\long-arrow-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\long-arrow-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\magic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\magnet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\male.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\map-marker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\mars-double.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\mars-stroke-h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\mars-stroke-v.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\mars-stroke.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\mars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\maxcdn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\meanpath.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\medkit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\meh-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\mercury.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\microphone-slash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\microphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\minus-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\minus-square-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\minus-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\mobile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\moon-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\motorcycle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\music.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\neuter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\newspaper-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\openid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\outdent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\pagelines.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\paint-brush.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\paper-plane-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\paper-plane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\paperclip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\paragraph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\paw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\paypal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\pencil-square-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\pencil-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\phone-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\picture-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\piechart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\pied-piper-alt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\pied-piper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\pinterest-p.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\pinterest-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\pinterest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\plane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\play-circle-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\play-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\plug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\plus-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\plus-square-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\plus-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\power-off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\puzzle-piece.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\qq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\qrcode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\question-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\quote-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\quote-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\random.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\rebel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\recycle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\reddit-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\reddit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\renren.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\repeat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\reply-all.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\reply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\retweet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\road.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\rocket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\rss-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\rss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\rub.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\scissors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\search-minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\search-plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\sellsy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\server.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\share-alt-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\share-alt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\share-square-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\share-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\share.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\shield.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\ship.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\shirtsinbulk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\shopping-cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\sign-in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\sign-out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\signal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\simplybuilt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\sitemap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\skyatlas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\skype.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\slack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\sliders.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\slideshare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\smile-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\sort-alpha-asc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\sort-alpha-desc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\sort-amount-asc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\sort-amount-desc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\sort-asc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\sort-desc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\sort-numeric-asc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\sort-numeric-desc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\sort.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\soundcloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\space-shuttle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\spinner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\spoon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\spotify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\square-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\stack-exchange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\stack-overflow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\star-half-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\star-half.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\star-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\steam-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\steam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\step-backward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\step-forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\stethoscope.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\street-view.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\strikethrough.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\stumbleupon-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\stumbleupon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\subscript.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\subway.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\suitcase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\sun-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\superscript.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\tablet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\tachometer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\tag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\tags.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\tasks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\taxi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\tencent-weibo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\terminal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\text-height.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\text-width.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\th-large.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\th-list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\th.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\thumb-tack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\thumbs-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\thumbs-o-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\thumbs-o-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\thumbs-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\ticket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\times-circle-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\times-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\times.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\tint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\toggle-off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\toggle-on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\train.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\transgender-alt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\transgender.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\trash-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\tree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\trello.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\trophy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\truck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\try.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\tty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\tumblr-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\tumblr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\twitch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\twitter-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\twitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\umbrella.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\underline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\university.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\unlock-alt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\usd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\user-md.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\user-plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\user-secret.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\user-times.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\venus-double.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\venus-mars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\venus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\viacoin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\video-camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\vimeo-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\vine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\vk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\volume-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\volume-off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\volume-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\weibo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\weixin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\whatsapp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\wheelchair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\wifi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\windows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\wordpress.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\wrench.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\xing-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\xing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\yahoo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\yelp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\youtube-play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\youtube-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\youtube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\resizedimage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\128\resizedimagepie.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.1.4.3.6376\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.1.4.3.6376\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

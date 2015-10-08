@@ -1,30 +1,30 @@
 ﻿using System;
 using System.Diagnostics;
 using Xamarin.Forms;
+using XLabs.Ioc;
+using XLabs.Platform.Device;
 
 namespace TidshanteringDyskalkyli.Pages
 {
     public class TimeEstimatorPage : ContentPage
     {
-        private Label _totalTimeLabel;
 
-        public Label TotalTimeLabel
-        {
-            get { return _totalTimeLabel ?? (_totalTimeLabel = new Label() {}); }
-            set { _totalTimeLabel = value; }
-        }
 
         public StackLayout TotalTimeLabelStackLayout
         {
             get
             {
-                return new StackLayout()
+                return new StackLayout
                 {
-                    Children = {
+                    Children =
+                    {
                         TotalTimeLabel,
                         ShowClockButton
                     },
                     Padding = new Thickness(5, 5, 5, 5),
+                    Orientation = StackOrientation.Horizontal,
+                    HorizontalOptions = LayoutOptions.CenterAndExpand,
+                    Spacing = 10,
                 };
             }
         }
@@ -33,11 +33,13 @@ namespace TidshanteringDyskalkyli.Pages
         {
             get
             {
-                return new Button()
+                return new Button
                 {
-                    Text = "Visa Tid På Klockur",
-                    BorderRadius = 2,
-                    Image = "128/clock.png"
+                    Text = "Klockur",
+                    Image = "128/resizedimage.png",
+                    HorizontalOptions = LayoutOptions.Center,
+                    //MinimumWidthRequest = 200,
+                    WidthRequest = 100
                 };
             }
         }
@@ -70,7 +72,7 @@ namespace TidshanteringDyskalkyli.Pages
                 {
                     Time = DateTime.Now.TimeOfDay,
                     Format = "HH:mm",
-                    HorizontalOptions = LayoutOptions.StartAndExpand,
+                    HorizontalOptions = LayoutOptions.StartAndExpand
                 });
             }
             set { _timePicker = value; }
@@ -118,34 +120,56 @@ namespace TidshanteringDyskalkyli.Pages
                     },
                     Spacing = 10,
 
+                    HorizontalOptions = LayoutOptions.Center
                 };
             }
+        }
+
+        private Label _totalTimeLabel;
+
+        public Label TotalTimeLabel
+        {
+            get
+            {
+                return _totalTimeLabel ?? (_totalTimeLabel = new Label()
+                {
+                    HorizontalOptions = LayoutOptions.Center,
+                    VerticalOptions = LayoutOptions.Center,    
+                });
+            }
+            set { _totalTimeLabel = value; }
         }
 
         public Layout StartTimeLayout
         {
             get
             {
-                return new StackLayout()
+                return new StackLayout
                 {
                     Children =
                     {
-                        new Label()
+                        new Label
                         {
                             Text = "Start tid: ",
-                            HorizontalOptions = LayoutOptions.Start,
+                            HorizontalOptions = LayoutOptions.Center,
                             VerticalOptions = LayoutOptions.Center
-
                         },
                         StartTimePicker
                     },
                     Orientation = StackOrientation.Horizontal,
+                    HorizontalOptions = LayoutOptions.CenterAndExpand,
                     Spacing = 5,
-                    Padding = new Thickness(5, 5, 5, 5)
+                    Padding = new Thickness(5, 5, 5, 5),
                 };
             }
         }
 
+        private void UpdateTimeLabel()
+        {
+            var timeEstimate = CalculateTotalDateTime();
+            TotalTimeLabel.Text = "Slut tid: " +
+                                  timeEstimate.ToString("hh") + ":" + timeEstimate.ToString("mm");
+        }
 
         public TimeEstimatorPage()
         {
@@ -177,16 +201,16 @@ namespace TidshanteringDyskalkyli.Pages
                     DurationTimePickerStackLayout,
                     TotalTimeLabelStackLayout
                 },
-                HorizontalOptions = LayoutOptions.CenterAndExpand,
-                VerticalOptions = LayoutOptions.CenterAndExpand
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center,
+                WidthRequest = Resolver.Resolve<IDevice>().Display.Width
             };
-        }
 
-        private void UpdateTimeLabel()
-        {
-            var timeEstimate = CalculateTotalDateTime();
-            TotalTimeLabel.Text = "Slut tid: " +
-                                  timeEstimate.ToString("hh") + ":" + timeEstimate.ToString("mm");
+            BackgroundColor = Colors.SoftGray;
+
+            Title = "Tidsestimering";
+            Icon = "128/resizedimagepie.png";
+
         }
     }
 }
