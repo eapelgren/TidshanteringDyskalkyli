@@ -10,8 +10,36 @@ namespace TidshanteringDyskalkyli.Pages
 
         public Label TotalTimeLabel
         {
-            get { return _totalTimeLabel ?? (_totalTimeLabel = new Label()); }
+            get { return _totalTimeLabel ?? (_totalTimeLabel = new Label() {}); }
             set { _totalTimeLabel = value; }
+        }
+
+        public StackLayout TotalTimeLabelStackLayout
+        {
+            get
+            {
+                return new StackLayout()
+                {
+                    Children = {
+                        TotalTimeLabel,
+                        ShowClockButton
+                    },
+                    Padding = new Thickness(5, 5, 5, 5),
+                };
+            }
+        }
+
+        public Button ShowClockButton
+        {
+            get
+            {
+                return new Button()
+                {
+                    Text = "Visa Tid På Klockur",
+                    BorderRadius = 2,
+                    Image = "128/clock.png"
+                };
+            }
         }
 
         private TimeSpan CalculateTotalDateTime()
@@ -26,12 +54,11 @@ namespace TidshanteringDyskalkyli.Pages
             }
             if (MinuteDurationPicker.SelectedIndex != -1)
             {
-                var minuteTimeSpan = new TimeSpan(0,0,MinuteDurationPicker.SelectedIndex,0);
+                var minuteTimeSpan = new TimeSpan(0, 0, MinuteDurationPicker.SelectedIndex, 0);
                 totalTime = totalTime.Add(minuteTimeSpan);
             }
             return totalTime;
         }
-
 
         private TimePicker _timePicker;
 
@@ -43,8 +70,7 @@ namespace TidshanteringDyskalkyli.Pages
                 {
                     Time = DateTime.Now.TimeOfDay,
                     Format = "HH:mm",
-                    HorizontalOptions = LayoutOptions.CenterAndExpand,
-                    
+                    HorizontalOptions = LayoutOptions.StartAndExpand,
                 });
             }
             set { _timePicker = value; }
@@ -58,7 +84,7 @@ namespace TidshanteringDyskalkyli.Pages
             {
                 return _hourDurationPicker ?? (_hourDurationPicker = new Picker
                 {
-                    Title = "Timmar"
+                    Title = "0 Timmar "
                 });
             }
             set { _hourDurationPicker = value; }
@@ -72,7 +98,7 @@ namespace TidshanteringDyskalkyli.Pages
             {
                 return _minuteDurationPicker ?? (_minuteDurationPicker = new Picker
                 {
-                    Title = "Minuter"
+                    Title = "0 Minuter "
                 });
             }
             set { _minuteDurationPicker = value; }
@@ -90,7 +116,32 @@ namespace TidshanteringDyskalkyli.Pages
                         HourDurationPicker,
                         MinuteDurationPicker
                     },
-                    Spacing = 10
+                    Spacing = 10,
+
+                };
+            }
+        }
+
+        public Layout StartTimeLayout
+        {
+            get
+            {
+                return new StackLayout()
+                {
+                    Children =
+                    {
+                        new Label()
+                        {
+                            Text = "Start tid: ",
+                            HorizontalOptions = LayoutOptions.Start,
+                            VerticalOptions = LayoutOptions.Center
+
+                        },
+                        StartTimePicker
+                    },
+                    Orientation = StackOrientation.Horizontal,
+                    Spacing = 5,
+                    Padding = new Thickness(5, 5, 5, 5)
                 };
             }
         }
@@ -101,12 +152,12 @@ namespace TidshanteringDyskalkyli.Pages
             Debug.WriteLine(DateTime.Now.TimeOfDay);
             for (var i = 0; i < 25; i++)
             {
-                HourDurationPicker.Items.Add(i.ToString() + " Timmar");
+                HourDurationPicker.Items.Add(i + " Timmar");
             }
 
-            for (var i = 1; i < 61; i++)
+            for (var i = 0; i < 61; i++)
             {
-                MinuteDurationPicker.Items.Add(i.ToString() + " Minuter");
+                MinuteDurationPicker.Items.Add(i + " Minuter");
             }
 
 
@@ -122,11 +173,12 @@ namespace TidshanteringDyskalkyli.Pages
             {
                 Children =
                 {
-                    StartTimePicker,
+                    StartTimeLayout,
                     DurationTimePickerStackLayout,
-                    TotalTimeLabel
-
-                }
+                    TotalTimeLabelStackLayout
+                },
+                HorizontalOptions = LayoutOptions.CenterAndExpand,
+                VerticalOptions = LayoutOptions.CenterAndExpand
             };
         }
 
@@ -134,7 +186,7 @@ namespace TidshanteringDyskalkyli.Pages
         {
             var timeEstimate = CalculateTotalDateTime();
             TotalTimeLabel.Text = "Slut tid: " +
-                                  timeEstimate.ToString("hh") + ":" +timeEstimate.ToString("mm");
+                                  timeEstimate.ToString("hh") + ":" + timeEstimate.ToString("mm");
         }
     }
 }
