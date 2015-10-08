@@ -499,6 +499,7 @@
     <Content Include="Resources\drawable\128\repeat.png" />
     <Content Include="Resources\drawable\128\reply-all.png" />
     <Content Include="Resources\drawable\128\reply.png" />
+    <Content Include="Resources\drawable\128\resizedimagelanguage.png" />
     <Content Include="Resources\drawable\128\resizedimagepie.png" />
     <Content Include="Resources\drawable\128\retweet.png" />
     <Content Include="Resources\drawable\128\road.png" />

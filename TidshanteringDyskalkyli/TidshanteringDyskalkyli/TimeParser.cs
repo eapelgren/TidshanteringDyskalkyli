@@ -126,8 +126,8 @@ namespace TidshanteringDyskalkyli
                     intDecimaalHour += 12;
                 }
 
-                var stringReturnRepresentationOfHourInt = AdjustHourString(intDecimaalHour);
-                var stringReturnRepresnationOfMinuteInt = intDecimalMinute.ToString();
+                var stringReturnRepresentationOfHourInt = AdjustTimeInsertZeroToString(intDecimaalHour);
+                var stringReturnRepresnationOfMinuteInt = AdjustTimeInsertZeroToString(intDecimalMinute);
 
                 var timeReturnObject = new TimeReturnObject
                 {
@@ -151,11 +151,26 @@ namespace TidshanteringDyskalkyli
             
         }
 
-        private static string AdjustHourString(int oldhour)
+        private static string AdjustTimeInsertZeroToString(int oldTime)
         {
-            if (oldhour.ToString().Length == 1)
+            if (oldTime.ToString().Length == 1)
             {
-                var i = oldhour.ToString();
+                var i = oldTime.ToString();
+                var i2 = i.Insert(0, "0");
+
+                return i2;
+            }
+            else
+            {  
+            return oldTime.ToString();
+            }
+        }
+
+        private static string AdjustMinuteString(int oldminute)
+        {
+            if (oldminute.ToString().Length == 1)
+            {
+                var i = oldminute.ToString();
                 var i2 = i.Insert(0, "0");
 
 
@@ -163,8 +178,8 @@ namespace TidshanteringDyskalkyli
             }
             else
             {
-                
-            return oldhour.ToString();
+
+                return oldminute.ToString();
             }
         }
 

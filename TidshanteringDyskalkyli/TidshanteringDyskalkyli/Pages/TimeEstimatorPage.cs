@@ -8,8 +8,6 @@ namespace TidshanteringDyskalkyli.Pages
 {
     public class TimeEstimatorPage : ContentPage
     {
-
-
         public StackLayout TotalTimeLabelStackLayout
         {
             get
@@ -173,6 +171,8 @@ namespace TidshanteringDyskalkyli.Pages
 
         public TimeEstimatorPage()
         {
+
+            NavigationPage.SetHasNavigationBar(this, false);
             Debug.WriteLine(DateTime.Now.TimeOfDay);
             for (var i = 0; i < 25; i++)
             {

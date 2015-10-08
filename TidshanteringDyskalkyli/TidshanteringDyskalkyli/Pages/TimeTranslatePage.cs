@@ -16,6 +16,7 @@ namespace TidshanteringDyskalkyli.Pages
 
         public TimeTranslatePage()
         {
+            NavigationPage.SetHasNavigationBar(this, false);
             vm = new ClockViewModel();
             TimePicker.SelectedIndex = 0;
             vm.AM = true;
@@ -43,18 +44,30 @@ namespace TidshanteringDyskalkyli.Pages
 
             SizeChanged += clockView.OnPageSizeChanged;
 
-            Content = new ContentView
+            TimeEntry.TextChanged += (sender, args) =>
+            {
+                if (TimeEntry.Text.Length > 0)
+                {
+                    CalculateButton.IsEnabled = true;
+                }
+            };
+            BackgroundColor = Colors.SoftGray;
+            Title = "Tidsöversättning";
+            Icon = "128/resizedimagelanguage.png";
+
+        Content = new ContentView
             {
                 Content = new StackLayout
                 {
                     Children =
                     {
                         TimeEnterStackLayout,
-                        CalculatedTimeLabel,
-                        clockView
+                        TotalTimeStackLayout,
+                        //clockView
                     },
                     Orientation = StackOrientation.Vertical,
-                    Spacing = 10
+                    Spacing = 10,
+                    VerticalOptions = LayoutOptions.CenterAndExpand
                 }
             };
         }
@@ -84,7 +97,9 @@ namespace TidshanteringDyskalkyli.Pages
                         "Eftermiddag"
                     },
                     Title = "Tid",
-                    MinimumWidthRequest = 20
+                    HorizontalOptions = LayoutOptions.Start,
+                    WidthRequest = 150,
+                    
                 });
             }
             set { _timePicker = value; }
@@ -97,7 +112,9 @@ namespace TidshanteringDyskalkyli.Pages
                 return _calculateButton ?? (_calculateButton = new Button
                 {
                     Text = "OK",
-                    Command = OKClickedCommand
+                    Command = OKClickedCommand,
+                    HorizontalOptions = LayoutOptions.Start,
+                    IsEnabled = false
                 });
             }
             set { _calculateButton = value; }
@@ -111,12 +128,34 @@ namespace TidshanteringDyskalkyli.Pages
                 {
                     Children =
                     {
+                        new Label()
+                        {
+                            Text = "Input",
+                            FontSize = Device.GetNamedSize(NamedSize.Micro, typeof (Label)),
+                        },
                         TimeEntry,
+                        AmpmStackLayout
+                    },
+                    HorizontalOptions = LayoutOptions.CenterAndExpand,
+                    VerticalOptions = LayoutOptions.Center
+                };
+            }
+        }
+
+        public StackLayout AmpmStackLayout
+        {
+            get
+            {
+                return new StackLayout()
+                {
+                    Children =
+                    {
                         TimePicker,
                         CalculateButton
                     },
                     Orientation = StackOrientation.Horizontal,
-                    Spacing = 8
+                    Spacing = 8,
+                    HorizontalOptions = LayoutOptions.CenterAndExpand
                 };
 
             }
@@ -132,9 +171,25 @@ namespace TidshanteringDyskalkyli.Pages
 
                     try
                     {
+                        
                     var timeObject = TimeParser.ParseTime(timeToParse, vm.AM);
                         CalculatedTimeLabel.Text = timeObject.DispalyString;
-
+                        if (CalculatedTimeLabel.Text != "HH:MM")
+                        {
+                            Device.BeginInvokeOnMainThread(() =>
+                            {
+                                CalculatedTimeLabel.TextColor = Color.Black;
+                                CalculatedTimeLabel.Opacity = 1;
+                                ShowClockButton.IsEnabled = true;
+                            });
+                    
+                        }
+                        else
+                        {
+                            CalculatedTimeLabel = null;
+                            CalculateButton = null;
+                            ShowClockButton = null;
+                        }
                         vm.Hour = int.Parse(timeObject.Hour);
                         vm.Minute = int.Parse(timeObject.Minute);
                     }
@@ -170,9 +225,75 @@ namespace TidshanteringDyskalkyli.Pages
         {
             get { return _calculatedTimeLabel ?? (_calculatedTimeLabel = new Label()
             {
-                HorizontalOptions = LayoutOptions.CenterAndExpand
+                Text = "HH:MM",
+                HorizontalOptions = LayoutOptions.CenterAndExpand,
+                Opacity = 0.5,
+                TextColor = Color.Gray,
+                VerticalOptions = LayoutOptions.Center
             }); }
             set { _calculatedTimeLabel = value; }
+        }
+
+        public StackLayout TotalTimeStackLayout
+        {
+            get
+            {
+                return new StackLayout()
+                {
+                    Children =
+                    {
+                        //new Label()
+                        //{
+                        //    Text = "Resultat",
+                        //    FontSize = Device.GetNamedSize(NamedSize.Micro, typeof (Label)),
+                        //},
+                        TotalTimeLabelSubLabelAndButtonStackLayout
+                    },
+                    HorizontalOptions = LayoutOptions.Center,
+                    Orientation = StackOrientation.Vertical,
+                    Padding = new Thickness(0,30,0,0),
+                    VerticalOptions = LayoutOptions.Center
+                };
+            }
+        }
+
+        public StackLayout TotalTimeLabelSubLabelAndButtonStackLayout
+        {
+            get
+            {
+                return new StackLayout
+                {
+                    Children =
+                    {
+                        CalculatedTimeLabel,
+                        ShowClockButton
+                    },
+                    Padding = new Thickness(5, 5, 5, 5),
+                    Orientation = StackOrientation.Horizontal,
+                    HorizontalOptions = LayoutOptions.CenterAndExpand,
+                    Spacing = 10,
+                };
+            }
+        }
+
+
+        private Button _showClockButton;
+
+        public Button ShowClockButton
+        {
+            get
+            {
+                return _showClockButton ??( _showClockButton = new Button
+                {
+                    Text = "Klockur",
+                    Image = "128/resizedimage.png",
+                    HorizontalOptions = LayoutOptions.Center,
+                    //MinimumWidthRequest = 200,
+                    WidthRequest = 100,
+                    IsEnabled = false
+                });
+            }
+            set { _showClockButton = value; }
         }
 
         public ClockViewModel vm { get; set; }

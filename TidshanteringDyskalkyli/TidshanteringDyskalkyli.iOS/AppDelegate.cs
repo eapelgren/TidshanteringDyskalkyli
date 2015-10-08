@@ -43,9 +43,6 @@ namespace TidshanteringDyskalkyli.iOS
         {
             var resolverContainer = new SimpleContainer();
 
-
-
-
             resolverContainer.Register<IDevice>(t => AppleDevice.CurrentDevice)
                 .Register<IDisplay>(t => t.Resolve<IDevice>().Display)
                 .Register<IFontManager>(t => new FontManager(t.Resolve<IDisplay>()))

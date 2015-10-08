@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using TidshanteringDyskalkyli.Pages;
+﻿using TidshanteringDyskalkyli.Pages;
 using Xamarin.Forms;
 
 namespace TidshanteringDyskalkyli
@@ -12,14 +8,19 @@ namespace TidshanteringDyskalkyli
         public App()
         {
             // The root page of your application
-            MainPage = new TabbedPage()
+
+            
+            var tabbedPage = new TabbedPageExtenstion
             {
                 Children =
-                {
-                    new TimeTranslatePage(),
-                    new TimeEstimatorPage()
-                }
+                    {
+                        new TimeTranslatePage(),
+                        new TimeEstimatorPage()
+                    },
+                Title = "Tidshantering",
             };
+            var navigationPage = new NavigationPage(tabbedPage);
+            MainPage = navigationPage;
         }
 
         protected override void OnStart()
