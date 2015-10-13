@@ -290,7 +290,11 @@ namespace TidshanteringDyskalkyli.Pages
                     HorizontalOptions = LayoutOptions.Center,
                     //MinimumWidthRequest = 200,
                     WidthRequest = 100,
-                    IsEnabled = false
+                    IsEnabled = false,
+                    Command = new Command(async () =>
+                    {
+                       await DisplayAlert("Inte implementerat", "Kommer senare", "Cancel");
+                    })
                 });
             }
             set { _showClockButton = value; }
