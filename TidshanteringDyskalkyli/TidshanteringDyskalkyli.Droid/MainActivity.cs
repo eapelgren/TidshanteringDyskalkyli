@@ -18,7 +18,7 @@ using XLabs.Serialization;
 
 namespace TidshanteringDyskalkyli.Droid
 {
-    [Activity(Label = "TidshanteringDyskalkyli", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "TidshanteringDyskalkyli", Theme = "@android:style/Theme.Holo.Light" ,Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsApplicationActivity
     {
         protected override void OnCreate(Bundle bundle)

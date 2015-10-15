@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xamarin.Forms;
 
 namespace TidshanteringDyskalkyli
 {
@@ -20,7 +17,7 @@ namespace TidshanteringDyskalkyli
         {
             get
             {
-                return new Dictionary<string, string>()
+                return new Dictionary<string, string>
                 {
                     ["ett"] = "01",
                     ["två"] = "02",
@@ -47,7 +44,8 @@ namespace TidshanteringDyskalkyli
                     ["tjogosex"] = "26",
                     ["tjugosju"] = "27",
                     ["tjugoåtta"] = "28",
-                    ["tjugonio"] = "29"
+                    ["tjugonio"] = "29",
+                    ["Halv"] = "30"
                 };
             }
         }
@@ -60,7 +58,6 @@ namespace TidshanteringDyskalkyli
         {
             try
             {
-
                 isHalv = null;
                 beforeTime = false;
                 minuteSet = false;
@@ -71,38 +68,57 @@ namespace TidshanteringDyskalkyli
 
                 var split = timeLower.Split(" ".ToCharArray());
 
+                //CHECK AND REMOVE FOR TIME INVARIANTS I & OVER ETC
                 foreach (var timeString in split)
                 {
                     if (timeString == "halv")
                     {
                         isHalv = true;
+                        var split2 = split.Where(s => !s.Equals(timeString)).ToArray();
+                        split = split2;
                     }
 
                     else if (timeString == "i")
                     {
                         beforeTime = true;
+                        var split2 = split.Where(s => !s.Equals(timeString)).ToArray();
+                        split = split2;
                     }
 
                     else if (timeString == "över")
                     {
                         beforeTime = false;
+                        var split2 = split.Where(s => !s.Equals(timeString)).ToArray();
+                        split = split2;
                     }
-                    else
+                }
+                foreach (var timestring in split)
+                {
+                    var number = CheckIfNumber(timestring);
+                    if (number == null)
                     {
-                        var number = CheckIfNumber(timeString);
-                        if (number != null && Minute == null)
-                        {
-                            Minute = number;
-                        }
-                        else if (number != null && Minute != null)
-                        {
-                            Hour = number;
-                        }
+                        var stringToRemove = timestring;
+                        var numIndex = Array.IndexOf(split, stringToRemove);
+                        split = split.Where((val, idx) => idx != numIndex).ToArray();
+                    }
+                    if (split.Length == 1 && number != null)
+                    {
+                        Hour = number;
+                        Minute = 0.ToString();
+                    }
+
+                    else if (number != null && Minute == null)
+                    {
+                        Minute = number;
+                    }
+                    else if (number != null && Minute != null)
+                    {
+                        Hour = number;
                     }
                 }
 
-                int intDecimalMinute = int.Parse(Minute);
-                int intDecimaalHour = int.Parse(Hour);
+                var intDecimalMinute = int.Parse(Minute);
+                var intDecimaalHour = int.Parse(Hour);
 
                 if (isHalv == true)
                 {
@@ -112,7 +128,7 @@ namespace TidshanteringDyskalkyli
 
                 if (beforeTime == true)
                 {
-                    intDecimalMinute -= int.Parse(Minute) * 2;
+                    intDecimalMinute -= int.Parse(Minute)*2;
                 }
 
                 if (intDecimalMinute < 0)
@@ -131,16 +147,12 @@ namespace TidshanteringDyskalkyli
 
                 var timeReturnObject = new TimeReturnObject
                 {
-
                     Hour = stringReturnRepresentationOfHourInt,
                     Minute = stringReturnRepresnationOfMinuteInt,
                     DispalyString = stringReturnRepresentationOfHourInt + ":" + stringReturnRepresnationOfMinuteInt
                 };
 
                 return timeReturnObject;
-
-
-
             }
             catch (Exception e)
             {
@@ -148,7 +160,6 @@ namespace TidshanteringDyskalkyli
                 Debug.WriteLine(e.Message);
                 throw;
             }
-            
         }
 
         private static string AdjustTimeInsertZeroToString(int oldTime)
@@ -160,10 +171,7 @@ namespace TidshanteringDyskalkyli
 
                 return i2;
             }
-            else
-            {  
             return oldTime.ToString();
-            }
         }
 
         private static string AdjustMinuteString(int oldminute)
@@ -176,11 +184,7 @@ namespace TidshanteringDyskalkyli
 
                 return i2;
             }
-            else
-            {
-
-                return oldminute.ToString();
-            }
+            return oldminute.ToString();
         }
 
         private static string CheckIfNumber(string time)

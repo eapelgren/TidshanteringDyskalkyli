@@ -14,8 +14,10 @@ namespace TidshanteringDyskalkyli
             {
                 Children =
                     {
+                        new ScrollTranslatePage(),
                         new TimeTranslatePage(),
                         new TimeEstimatorPage()
+
                     },
                 Title = "Tidshantering",
             };

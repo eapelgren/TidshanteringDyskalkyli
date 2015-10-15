@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Windows.Input;
+using TidshanteringDyskalkyli.Annotations;
 using TidshanteringDyskalkyli.ViewModel;
 using Xamarin.Forms;
 
@@ -20,16 +22,26 @@ namespace TidshanteringDyskalkyli.Pages
             vm = new ClockViewModel();
             TimePicker.SelectedIndex = 0;
             vm.AM = true;
+            BackgroundColor = Colors.SoftGray;
+            Title = "Tidsöversättning";
+            Icon = "128/resizedimagelanguage.png";
+
             TimePicker.SelectedIndexChanged += (sender, args) =>
             {
                 if (TimePicker.SelectedIndex == 0)
                 {
                     vm.AM = true;
+
                 }
                 else if (TimePicker.SelectedIndex == 1)
                 {
                     vm.AM = false;
                 }
+            };
+
+            TimePicker.Unfocused += (sender, args) =>
+            {
+                OKClickedCommand.Execute(null);
             };
 
 
@@ -40,7 +52,6 @@ namespace TidshanteringDyskalkyli.Pages
                 MinimumHeightRequest = 100,
                 MinimumWidthRequest = 100
             };
-            //Content = clockView;
 
             SizeChanged += clockView.OnPageSizeChanged;
 
@@ -51,11 +62,9 @@ namespace TidshanteringDyskalkyli.Pages
                     CalculateButton.IsEnabled = true;
                 }
             };
-            BackgroundColor = Colors.SoftGray;
-            Title = "Tidsöversättning";
-            Icon = "128/resizedimagelanguage.png";
 
-        Content = new ContentView
+
+            Content = new ContentView
             {
                 Content = new StackLayout
                 {
@@ -63,13 +72,14 @@ namespace TidshanteringDyskalkyli.Pages
                     {
                         TimeEnterStackLayout,
                         TotalTimeStackLayout,
-                        //clockView
+                        
                     },
                     Orientation = StackOrientation.Vertical,
                     Spacing = 10,
                     VerticalOptions = LayoutOptions.CenterAndExpand
                 }
             };
+            
         }
 
         public Entry TimeEntry
@@ -141,6 +151,7 @@ namespace TidshanteringDyskalkyli.Pages
                 };
             }
         }
+       
 
         public StackLayout AmpmStackLayout
         {
@@ -165,9 +176,17 @@ namespace TidshanteringDyskalkyli.Pages
         {
             get
             {
-                return new Command(() =>
+                return new Command(async () =>
                 {
+
                     var timeToParse = TimeEntry.Text;
+
+                    if (timeToParse == null)
+                    {
+                      await DisplayAlert("Du har inte skrivit något i textfältet", "Skrriv in en text", "Cancel");
+                      TimeEntry.Focus();
+                      return;
+                    }
 
                     try
                     {
@@ -213,9 +232,13 @@ namespace TidshanteringDyskalkyli.Pages
                                     "Testa skriv: " + collectedPair.Value, "OK");
 
                                 TimeEntry.Text = "";
+                                CalculatedTimeLabel.Text = "HH:MM";
                                 TimeEntry.Placeholder = collectedPair.Value;
                             });
                     }
+
+                    TimePicker.Unfocus();
+                    TimeEntry.Unfocus();
                     
                 });
             }
@@ -278,6 +301,8 @@ namespace TidshanteringDyskalkyli.Pages
 
 
         private Button _showClockButton;
+        private Picker _halfScroll;
+        private View _hourScroll;
 
         public Button ShowClockButton
         {

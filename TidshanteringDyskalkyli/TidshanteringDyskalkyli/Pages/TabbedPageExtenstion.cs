@@ -13,6 +13,7 @@ namespace TidshanteringDyskalkyli.Pages
         public TabbedPageExtenstion()
         {
             NavigationPage.SetHasNavigationBar(this, false);
+            BackgroundColor = Colors.SoftGray;
         }
     }
 }

@@ -29,17 +29,17 @@ namespace TidshanteringDyskalkyli.Pages
             }
 
 
-            StartTimePicker.Unfocused += (sender, args) =>
+            StartTimePicker.PropertyChanged += (sender, args) =>
             {
                 UpdateTotalTime();
             };
 
-            HourDurationPicker.Unfocused += (sender, args) =>
+            HourDurationPicker.PropertyChanged += (sender, args) =>
             {
                 UpdateTotalTime();
             };
 
-            MinuteDurationPicker.Unfocused += (sender, args) =>
+            MinuteDurationPicker.PropertyChanged += (sender, args) =>
             {
                 UpdateTotalTime();
             };
@@ -269,7 +269,7 @@ namespace TidshanteringDyskalkyli.Pages
 
         private TimeSpan CalculateTimeBetweenTime()
         {
-            var startTime = StartTimePicker.Time;
+f            var startTime = StartTimePicker.Time;
 
             if (HourDurationPicker.SelectedIndex != -1)
             {
@@ -285,9 +285,10 @@ namespace TidshanteringDyskalkyli.Pages
             if (startTime > endTime)
             {
 
-                var totalTime2 = endTime - startTime;
-                Debug.WriteLine(totalTime2.ToString());
-                startTime = startTime.Add(new TimeSpan(1, 0, 0, 0));
+                endTime = endTime.Add(new TimeSpan(1, 0, 0, 0));
+                var theReturn = (endTime - startTime).Duration();
+                Debug.WriteLine(theReturn);
+                return theReturn;
                 //throw new Exception("illegal time exception");
             }
 
@@ -305,14 +306,26 @@ namespace TidshanteringDyskalkyli.Pages
             if (HourDurationPicker.SelectedIndex != -1)
             {
                 var hourTimeSpan = new TimeSpan(0, HourDurationPicker.SelectedIndex, 0, 0);
-                endTime = endTime.Subtract(hourTimeSpan);
+                endTime = endTime - hourTimeSpan;
             }
             if (MinuteDurationPicker.SelectedIndex != -1)
             {
                 var minuteTimeSpan = new TimeSpan(0, 0, MinuteDurationPicker.SelectedIndex, 0);
                 endTime = endTime.Subtract(minuteTimeSpan);
             }
+
+            TimeSpan starTimeSpan = TimeSpan.Zero; 
+            if (starTimeSpan > endTime)
+            {
+
+                endTime = endTime.Add(new TimeSpan(1, 0, 0, 0));
+                var theReturn = (endTime - starTimeSpan).Duration();
+                Debug.WriteLine(theReturn);
+                return theReturn;
+                //throw new Exception("illegal time exception");
+            }
             var startTime = endTime;
+
 
             return startTime;
         }
@@ -320,7 +333,10 @@ namespace TidshanteringDyskalkyli.Pages
         private void UpdateFinalTimePicker()
         {
             var timeEstimate = CalculateEndDateTime();
-            EndTimePicker.Time = timeEstimate;
+   
+            var timeToSet = new TimeSpan(0,timeEstimate.Hours, timeEstimate.Minutes, 0);
+
+            EndTimePicker.Time = timeToSet;
             //EndTimePicker.IsEnabled = false;
 
             //    TotalTimeLabel.Text = "Slut tid: " +
