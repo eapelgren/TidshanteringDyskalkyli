@@ -9,7 +9,6 @@ namespace TidshanteringDyskalkyli
         {
             // The root page of your application
 
-            
             var tabbedPage = new TabbedPageExtenstion
             {
                 Children =
@@ -27,11 +26,13 @@ namespace TidshanteringDyskalkyli
 
         protected override void OnStart()
         {
+            
             // Handle when your app starts
         }
-
+        
         protected override void OnSleep()
         {
+            
             // Handle when your app sleeps
         }
 

@@ -39,6 +39,7 @@
     <Compile Include="ClockView.cs" />
     <Compile Include="Colors.cs" />
     <Compile Include="Controls\MyTimePicker.cs" />
+    <Compile Include="IPickerEventHandlerSetter.cs" />
     <Compile Include="Pages\ScrollTranslatePage.cs" />
     <Compile Include="Pages\TabbedPageExtenstion.cs" />
     <Compile Include="Pages\TimeEstimatorPage.cs" />

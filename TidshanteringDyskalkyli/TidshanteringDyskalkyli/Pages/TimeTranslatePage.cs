@@ -23,7 +23,7 @@ namespace TidshanteringDyskalkyli.Pages
             TimePicker.SelectedIndex = 0;
             vm.AM = true;
             BackgroundColor = Colors.SoftGray;
-            Title = "Tidsöversättning";
+            Title = "Översättning";
             Icon = "128/resizedimagelanguage.png";
 
             TimePicker.SelectedIndexChanged += (sender, args) =>
@@ -90,6 +90,7 @@ namespace TidshanteringDyskalkyli.Pages
                 {
                     Placeholder = "kvart i tre",
                     HorizontalOptions = LayoutOptions.FillAndExpand,
+                    BackgroundColor = Color.White
                 });
             }
             set { _timeEntry = value; }
@@ -109,6 +110,7 @@ namespace TidshanteringDyskalkyli.Pages
                     Title = "Tid",
                     HorizontalOptions = LayoutOptions.Start,
                     WidthRequest = 150,
+                    BackgroundColor = Color.White
                     
                 });
             }
@@ -251,7 +253,8 @@ namespace TidshanteringDyskalkyli.Pages
                 Text = "HH:MM",
                 HorizontalOptions = LayoutOptions.CenterAndExpand,
                 Opacity = 0.5,
-                TextColor = Color.Gray,
+                TextColor = Color.Black,
+                FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
                 VerticalOptions = LayoutOptions.Center
             }); }
             set { _calculatedTimeLabel = value; }

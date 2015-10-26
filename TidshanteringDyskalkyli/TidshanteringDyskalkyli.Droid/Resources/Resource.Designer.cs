@@ -88,6 +88,12 @@ namespace TidshanteringDyskalkyli.Droid
 		public partial class Color
 		{
 			
+			// aapt resource value: 0x7f05000b
+			public const int actionBarBackgroundColor = 2131034123;
+			
+			// aapt resource value: 0x7f05000c
+			public const int actionBarTextColor = 2131034124;
+			
 			// aapt resource value: 0x7f050000
 			public const int calendar_active_month_bg = 2131034112;
 			
@@ -118,8 +124,8 @@ namespace TidshanteringDyskalkyli.Droid
 			// aapt resource value: 0x7f050009
 			public const int calendar_text_selected = 2131034121;
 			
-			// aapt resource value: 0x7f05000b
-			public const int calendar_text_selector = 2131034123;
+			// aapt resource value: 0x7f05000d
+			public const int calendar_text_selector = 2131034125;
 			
 			// aapt resource value: 0x7f05000a
 			public const int calendar_text_unselectable = 2131034122;
@@ -288,6 +294,15 @@ namespace TidshanteringDyskalkyli.Droid
 			
 			// aapt resource value: 0x7f070000
 			public const int CalendarTitle = 2131165184;
+			
+			// aapt resource value: 0x7f070004
+			public const int MyTheme = 2131165188;
+			
+			// aapt resource value: 0x7f070006
+			public const int MyTheme_ActionBar_TitleTextStyle = 2131165190;
+			
+			// aapt resource value: 0x7f070005
+			public const int MyTheme_ActionBarStyle = 2131165189;
 			
 			static Style()
 			{

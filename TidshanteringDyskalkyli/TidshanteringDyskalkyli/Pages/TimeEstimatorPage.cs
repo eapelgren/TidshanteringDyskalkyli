@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using Xamarin.Forms;
 using XLabs.Ioc;
@@ -16,6 +17,7 @@ namespace TidshanteringDyskalkyli.Pages
 
         public TimeEstimatorPage()
         {
+
             NavigationPage.SetHasNavigationBar(this, false);
             Debug.WriteLine(DateTime.Now.TimeOfDay);
             for (var i = 0; i < 25; i++)
@@ -28,26 +30,14 @@ namespace TidshanteringDyskalkyli.Pages
                 MinuteDurationPicker.Items.Add(i + " Minuter");
             }
 
-
-            StartTimePicker.PropertyChanged += (sender, args) =>
+            var pickerHandler = Resolver.Resolve<IPickerEventHandlerSetter>();
+            var viewList = new List<View> {HourDurationPicker, MinuteDurationPicker, EndTimePicker, StartTimePicker};
+            pickerHandler.setEventHandler(viewList);
+            pickerHandler.PropertyChanged += (sender, args) =>
             {
                 UpdateTotalTime();
             };
 
-            HourDurationPicker.PropertyChanged += (sender, args) =>
-            {
-                UpdateTotalTime();
-            };
-
-            MinuteDurationPicker.PropertyChanged += (sender, args) =>
-            {
-                UpdateTotalTime();
-            };
-
-            EndTimePicker.PropertyChanged += (sender, args) =>
-            {
-                UpdateTotalTime();
-            };
 
             Padding = new Thickness(0, 20, 0, 0);
 
@@ -67,7 +57,7 @@ namespace TidshanteringDyskalkyli.Pages
 
             BackgroundColor = Colors.SoftGray;
 
-            Title = "Tidsestimering";
+            Title = "Estimering";
             Icon = "128/resizedimagepie.png";
         }
 
@@ -79,7 +69,8 @@ namespace TidshanteringDyskalkyli.Pages
                 {
                     //Time = DateTime.Now.TimeOfDay,
                     Format = "HH:mm",
-                    HorizontalOptions = LayoutOptions.StartAndExpand
+                    HorizontalOptions = LayoutOptions.StartAndExpand,
+                    BackgroundColor = Color.White,
                 });
             }
             set { _endTimePicker = value; }
@@ -92,7 +83,8 @@ namespace TidshanteringDyskalkyli.Pages
                 return _hourDurationPicker ?? (_hourDurationPicker = new Picker
                 {
                     Title = "Timmar",
-                    WidthRequest = 100,
+                    WidthRequest = 120,
+                    BackgroundColor = Color.White,
                 });
             }
             set { _hourDurationPicker = value; }
@@ -105,7 +97,8 @@ namespace TidshanteringDyskalkyli.Pages
                 return _minuteDurationPicker ?? (_minuteDurationPicker = new Picker
                 {
                     Title = "Minuter",
-                    WidthRequest = 100,
+                    WidthRequest = 120,
+                    BackgroundColor = Color.White
                 });
             }
             set { _minuteDurationPicker = value; }
@@ -119,7 +112,8 @@ namespace TidshanteringDyskalkyli.Pages
                 {
                     //Time = DateTime.Now.TimeOfDay,
                     Format = "HH:mm",
-                    HorizontalOptions = LayoutOptions.StartAndExpand
+                    HorizontalOptions = LayoutOptions.StartAndExpand,
+                    BackgroundColor = Color.White,
                 });
             }
             set { _timePicker = value; }
@@ -162,7 +156,8 @@ namespace TidshanteringDyskalkyli.Pages
                         MinuteDurationPicker
                     },
                     Spacing = 10,
-                    HorizontalOptions = LayoutOptions.Center
+                    HorizontalOptions = LayoutOptions.Center,
+                    Padding = new Thickness(10,0,10,0),
                 };
             }
         }
@@ -243,7 +238,8 @@ namespace TidshanteringDyskalkyli.Pages
                 return _totalTimeLabel ?? (_totalTimeLabel = new Label
                 {
                     HorizontalOptions = LayoutOptions.Center,
-                    VerticalOptions = LayoutOptions.Center
+                    VerticalOptions = LayoutOptions.Center,
+                    FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label))
                 });
             }
             set { _totalTimeLabel = value; }
@@ -269,7 +265,7 @@ namespace TidshanteringDyskalkyli.Pages
 
         private TimeSpan CalculateTimeBetweenTime()
         {
-f            var startTime = StartTimePicker.Time;
+            var startTime = StartTimePicker.Time;
 
             if (HourDurationPicker.SelectedIndex != -1)
             {
@@ -365,10 +361,11 @@ f            var startTime = StartTimePicker.Time;
                 HourDurationPicker.IsEnabled = false;
                 MinuteDurationPicker.IsEnabled = false;
                 UpdateFinalTimePicker();
-                HourDurationPicker.BackgroundColor = Color.Silver;
-                MinuteDurationPicker.BackgroundColor = Color.Silver;
-                StartTimePicker.BackgroundColor = Color.Silver;
-                EndTimePicker.BackgroundColor = Color.Silver;
+                //HourDurationPicker.BackgroundColor = Color.Silver;
+                //MinuteDurationPicker.BackgroundColor = Color.Silver;
+                //StartTimePicker.BackgroundColor = Color.Silver;
+                //EndTimePicker.BackgroundColor = Color.Silver;
+
             }
             else if (StartTimePicker.Time != TimeSpan.Zero && EndTimePicker.Time != TimeSpan.Zero && StartTimePicker.IsEnabled && EndTimePicker.IsEnabled)
             {
@@ -377,10 +374,10 @@ f            var startTime = StartTimePicker.Time;
                 EndTimePicker.IsEnabled = false;
                 StartTimePicker.IsEnabled = false;
                 UpdateTimeBetweenPickers();
-                HourDurationPicker.BackgroundColor = Color.Silver;
-                MinuteDurationPicker.BackgroundColor = Color.Silver;
-                StartTimePicker.BackgroundColor = Color.Silver;
-                EndTimePicker.BackgroundColor = Color.Silver;
+                //HourDurationPicker.BackgroundColor = Color.Silver;
+                //MinuteDurationPicker.BackgroundColor = Color.Silver;
+                //StartTimePicker.BackgroundColor = Color.Silver;
+                //EndTimePicker.BackgroundColor = Color.Silver;
             }
             else if ((HourDurationPicker.SelectedIndex != -1 && MinuteDurationPicker.SelectedIndex != -1) && EndTimePicker.Time != TimeSpan.Zero && HourDurationPicker.IsEnabled && MinuteDurationPicker.IsEnabled && EndTimePicker.IsEnabled)
             {
@@ -389,10 +386,10 @@ f            var startTime = StartTimePicker.Time;
                 EndTimePicker.IsEnabled = false;
                 StartTimePicker.IsEnabled = false;
                 UpdateStartTime();
-                HourDurationPicker.BackgroundColor = Color.Silver;
-                MinuteDurationPicker.BackgroundColor = Color.Silver;
-                StartTimePicker.BackgroundColor = Color.Silver;
-                EndTimePicker.BackgroundColor = Color.Silver;
+                //HourDurationPicker.BackgroundColor = Color.Silver;
+                //MinuteDurationPicker.BackgroundColor = Color.Silver;
+                //StartTimePicker.BackgroundColor = Color.Silver;
+                //EndTimePicker.BackgroundColor = Color.Silver;
             }
 
             

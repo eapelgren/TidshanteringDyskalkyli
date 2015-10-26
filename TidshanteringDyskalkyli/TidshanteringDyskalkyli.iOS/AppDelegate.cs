@@ -51,6 +51,7 @@ namespace TidshanteringDyskalkyli.iOS
                 .Register<IEmailService, EmailService>()
                 .Register<IMediaPicker, MediaPicker>()
                 .Register<ISecureStorage, SecureStorage>()
+                .Register<IPickerEventHandlerSetter>(t => new PickerEventHandlerSetteriOS())
                 .Register<IDependencyContainer>(t => resolverContainer);
 
             Resolver.SetResolver(resolverContainer.GetResolver());

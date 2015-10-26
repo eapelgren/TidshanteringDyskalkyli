@@ -22,7 +22,7 @@
     <MandroidI18n />
     <JavaMaximumHeapSize />
     <JavaOptions />
-    <TargetFrameworkVersion>v5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
@@ -61,6 +61,7 @@
     <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.ObjectModel" />
     <Reference Include="System.Runtime" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
@@ -115,6 +116,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
+    <Compile Include="PickerEventHandlerSetterDroid.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -128,6 +130,9 @@
     <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\values\styles.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Properties\AndroidManifest.xml" />
@@ -412,7 +417,7 @@
     <Content Include="Resources\drawable\128\linux.png" />
     <Content Include="Resources\drawable\128\list-alt.png" />
     <Content Include="Resources\drawable\128\list-ol.png" />
-    <Content Include="Resources\drawable\128\list-ul.png" />
+    <Content Include="Resources\drawable\128\listul.png" />
     <Content Include="Resources\drawable\128\list.png" />
     <Content Include="Resources\drawable\128\location-arrow.png" />
     <Content Include="Resources\drawable\128\lock.png" />
@@ -501,6 +506,7 @@
     <Content Include="Resources\drawable\128\reply.png" />
     <Content Include="Resources\drawable\128\resizedimagelanguage.png" />
     <Content Include="Resources\drawable\128\resizedimagepie.png" />
+    <Content Include="Resources\drawable\128\resizedimageullist.png" />
     <Content Include="Resources\drawable\128\retweet.png" />
     <Content Include="Resources\drawable\128\road.png" />
     <Content Include="Resources\drawable\128\rocket.png" />

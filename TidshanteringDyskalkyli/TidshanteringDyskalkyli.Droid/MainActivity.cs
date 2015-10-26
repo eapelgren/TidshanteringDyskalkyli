@@ -18,7 +18,7 @@ using XLabs.Serialization;
 
 namespace TidshanteringDyskalkyli.Droid
 {
-    [Activity(Label = "TidshanteringDyskalkyli", Theme = "@android:style/Theme.Holo.Light" ,Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "TidshanteringDyskalkyli", Theme = "@style/MyTheme", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsApplicationActivity
     {
         protected override void OnCreate(Bundle bundle)
@@ -43,6 +43,7 @@ namespace TidshanteringDyskalkyli.Droid
                 .Register<ITextToSpeechService, TextToSpeechService>()
                 .Register<IDependencyContainer>(resolverContainer)
                 .Register<IXFormsApp>(app)
+                .Register<IPickerEventHandlerSetter>(t => new PickerEventHandlerSetterDroid())
                 .Register<ISecureStorage>(t => new KeyVaultStorage(t.Resolve<IDevice>().Id.ToCharArray()));
 
 
