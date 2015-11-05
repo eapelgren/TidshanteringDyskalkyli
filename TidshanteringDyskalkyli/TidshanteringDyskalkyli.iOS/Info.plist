@@ -16,7 +16,7 @@
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
 	<key>MinimumOSVersion</key>
-	<string></string>
+	<string>9.1</string>
 	<key>CFBundleDisplayName</key>
 	<string>Tidshantering</string>
 	<key>CFBundleIdentifier</key>

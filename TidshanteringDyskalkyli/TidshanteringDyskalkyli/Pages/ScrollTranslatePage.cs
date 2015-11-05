@@ -24,7 +24,7 @@ namespace TidshanteringDyskalkyli.Pages
         public ScrollTranslatePage()
         {
 
-            Title = "Skapare";
+            Title = "Scroll";
             Icon = "128/resizedimageullist.png";
 
             Content = new StackLayout
@@ -127,7 +127,7 @@ namespace TidshanteringDyskalkyli.Pages
                 }
                 bool am = !amPm.ToLower().Equals("eftermiddag");
                 
-                var timeObject = TimeParser.ParseTime(totalTime.ToLower(), am);
+                var timeObject = new TimeParser().ParseTime(totalTime.ToLower(), am);
                 CalculatedTimeLabel.Text = timeObject.DispalyString;
                 CalculatedTimeLabel.TextColor = Color.Black;
             }

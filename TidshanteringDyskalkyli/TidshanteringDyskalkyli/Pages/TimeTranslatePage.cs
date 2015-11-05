@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Windows.Input;
@@ -36,7 +37,7 @@ namespace TidshanteringDyskalkyli.Pages
                 else if (TimePicker.SelectedIndex == 1)
                 {
                     vm.AM = false;
-                }
+                }   
             };
 
             TimePicker.Unfocused += (sender, args) =>
@@ -47,13 +48,13 @@ namespace TidshanteringDyskalkyli.Pages
 
             Padding = new Thickness(0, 20, 0, 0);
 
-            var clockView = new ClockView(vm)
-            {
-                MinimumHeightRequest = 100,
-                MinimumWidthRequest = 100
-            };
+            //var clockView = new ClockView(vm)
+            //{
+            //    MinimumHeightRequest = 100,
+            //    MinimumWidthRequest = 100
+            //};
 
-            SizeChanged += clockView.OnPageSizeChanged;
+            //SizeChanged += clockView.OnPageSizeChanged;
 
             TimeEntry.TextChanged += (sender, args) =>
             {
@@ -193,7 +194,8 @@ namespace TidshanteringDyskalkyli.Pages
                     try
                     {
                         
-                    var timeObject = TimeParser.ParseTime(timeToParse, vm.AM);
+                    TimeReturnObject timeObject = new TimeParser().ParseTime(timeToParse, vm.AM);
+                        Debug.WriteLine(timeObject.Hour);
                         CalculatedTimeLabel.Text = timeObject.DispalyString;
                         if (CalculatedTimeLabel.Text != "HH:MM")
                         {
@@ -211,12 +213,18 @@ namespace TidshanteringDyskalkyli.Pages
                             CalculateButton = null;
                             ShowClockButton = null;
                         }
-                        vm.Hour = int.Parse(timeObject.Hour);
-                        vm.Minute = int.Parse(timeObject.Minute);
+                        Debug.WriteLine(timeObject.Hour);
+                        Device.BeginInvokeOnMainThread(() =>
+                        {
+                            vm.Hour = int.Parse(timeObject.Hour);
+                            vm.Minute = int.Parse(timeObject.Minute);
+                        });
+        
                     }
-                    catch (Exception)
+                    catch (Exception e)
                     {
-                            Device.BeginInvokeOnMainThread(() =>
+                        Debug.WriteLine(e.Message);
+                        Device.BeginInvokeOnMainThread(() =>
                             {
                                 Dictionary<int, string> inputs = new Dictionary<int, string>()
                                 {
@@ -236,12 +244,15 @@ namespace TidshanteringDyskalkyli.Pages
                                 TimeEntry.Text = "";
                                 CalculatedTimeLabel.Text = "HH:MM";
                                 TimeEntry.Placeholder = collectedPair.Value;
+                                
+                                throw e;
                             });
+                     
                     }
 
                     TimePicker.Unfocus();
                     TimeEntry.Unfocus();
-                    
+
                 });
             }
         }

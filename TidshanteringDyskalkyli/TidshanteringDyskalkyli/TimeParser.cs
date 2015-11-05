@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace TidshanteringDyskalkyli
 {
-    public static class TimeParser
+    public class TimeParser
     {
         public static bool minuteSet { get; set; }
 
@@ -54,7 +54,7 @@ namespace TidshanteringDyskalkyli
 
         public static bool? beforeTime { get; set; }
 
-        public static TimeReturnObject ParseTime(string time, bool isAM)
+        public TimeReturnObject ParseTime(string time, bool isAM)
         {
             try
             {
@@ -197,8 +197,11 @@ namespace TidshanteringDyskalkyli
 
     public class TimeReturnObject
     {
-        public string Hour { get; set; }
-        public string Minute { get; set; }
-        public string DispalyString { get; set; }
+        public string Hour;
+        public string Minute;
+        public string DispalyString;
+
     }
+
+
 }
