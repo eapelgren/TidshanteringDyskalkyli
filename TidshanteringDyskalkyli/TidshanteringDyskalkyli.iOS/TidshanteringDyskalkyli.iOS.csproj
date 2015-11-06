@@ -3,8 +3,6 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{6BB9916A-1D6B-40B0-8DC9-B3A6DF128E8C}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
@@ -50,6 +48,10 @@
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchLink>Full</MtouchLink>
+    <MtouchI18n>
+    </MtouchI18n>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
@@ -62,8 +64,8 @@
     <CodesignKey>iPhone Developer</CodesignKey>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <CodesignProvision>41539c48-5709-4cd2-867a-0465df750c36</CodesignProvision>
-    <CodesignResourceRules />
-    <CodesignExtraArgs />
+    <CodesignExtraArgs>
+    </CodesignExtraArgs>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
     <DebugType>none</DebugType>
@@ -76,10 +78,8 @@
     <BuildIpa>True</BuildIpa>
     <CodesignProvision>41539c48-5709-4cd2-867a-0465df750c36</CodesignProvision>
     <CodesignKey>iPhone Distribution: XLENT Consulting AB (R6GV67H6AC)</CodesignKey>
-    <CodesignEntitlements>
-    </CodesignEntitlements>
-    <CodesignResourceRules />
-    <CodesignExtraArgs />
+    <CodesignExtraArgs>
+    </CodesignExtraArgs>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
     <DebugType>none</DebugType>
@@ -91,10 +91,8 @@
     <MtouchArch>ARMv7, ARM64</MtouchArch>
     <CodesignProvision>41539c48-5709-4cd2-867a-0465df750c36</CodesignProvision>
     <CodesignKey>iPhone Distribution: XLENT Consulting AB (R6GV67H6AC)</CodesignKey>
-    <CodesignEntitlements>
-    </CodesignEntitlements>
-    <CodesignResourceRules />
-    <CodesignExtraArgs />
+    <CodesignExtraArgs>
+    </CodesignExtraArgs>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
@@ -108,63 +106,52 @@
   <ItemGroup>
     <ProjectReference Include="..\TidshanteringDyskalkyli\TidshanteringDyskalkyli.csproj">
       <Name>TidshanteringDyskalkyli</Name>
+      <Project>{E3D9570C-3F81-47B1-9D13-86DCB60814BE}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="ExifLib, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\ExifLib.PCL.1.0.1\lib\portable-net45+sl50+win+WindowsPhoneApp81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10\ExifLib.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
-    <Reference Include="Xamarin.Forms.Core, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Xamarin.Forms.1.4.3.6376\lib\Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Xamarin.Forms.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Xamarin.Forms.1.4.3.6376\lib\Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Xamarin.Forms.Platform.iOS, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Xamarin.Forms.1.4.3.6376\lib\Xamarin.iOS10\Xamarin.Forms.Platform.iOS.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Xamarin.Forms.Xaml, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Xamarin.Forms.1.4.3.6376\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Xamarin.iOS" />
-    <Reference Include="XLabs.Core, Version=2.0.5679.29810, Culture=neutral, PublicKeyToken=d65109b36e5040e4, processorArchitecture=MSIL">
+    <Reference Include="ExifLib, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\packages\ExifLib.PCL.1.0.1\lib\portable-net45+sl50+win+WindowsPhoneApp81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10\ExifLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\packages\Xamarin.Forms.1.4.3.6376\lib\Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\packages\Xamarin.Forms.1.4.3.6376\lib\Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform.iOS, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\packages\Xamarin.Forms.1.4.3.6376\lib\Xamarin.iOS10\Xamarin.Forms.Platform.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\packages\Xamarin.Forms.1.4.3.6376\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="XLabs.Core, Version=2.0.5679.29810, Culture=neutral, PublicKeyToken=d65109b36e5040e4">
       <HintPath>..\..\packages\XLabs.Core.2.0.5679\lib\Xamarin.iOS10\XLabs.Core.dll</HintPath>
-      <Private>True</Private>
     </Reference>
-    <Reference Include="XLabs.Forms, Version=2.0.5679.29810, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="XLabs.Forms, Version=2.0.5679.29810, Culture=neutral, PublicKeyToken=null">
       <HintPath>..\..\packages\XLabs.Forms.2.0.5679\lib\Xamarin.iOS10\XLabs.Forms.dll</HintPath>
-      <Private>True</Private>
     </Reference>
-    <Reference Include="XLabs.Forms.iOS, Version=2.0.5679.29846, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="XLabs.Forms.iOS, Version=2.0.5679.29846, Culture=neutral, PublicKeyToken=null">
       <HintPath>..\..\packages\XLabs.Forms.2.0.5679\lib\Xamarin.iOS10\XLabs.Forms.iOS.dll</HintPath>
-      <Private>True</Private>
     </Reference>
-    <Reference Include="XLabs.Ioc, Version=2.0.5679.29810, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="XLabs.Ioc, Version=2.0.5679.29810, Culture=neutral, PublicKeyToken=null">
       <HintPath>..\..\packages\XLabs.IoC.2.0.5679\lib\portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1\XLabs.Ioc.dll</HintPath>
-      <Private>True</Private>
     </Reference>
-    <Reference Include="XLabs.Platform, Version=2.0.5679.29810, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="XLabs.Platform, Version=2.0.5679.29810, Culture=neutral, PublicKeyToken=null">
       <HintPath>..\..\packages\XLabs.Platform.2.0.5679\lib\Xamarin.iOS10\XLabs.Platform.dll</HintPath>
-      <Private>True</Private>
     </Reference>
-    <Reference Include="XLabs.Platform.iOS, Version=2.0.5679.29838, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="XLabs.Platform.iOS, Version=2.0.5679.29838, Culture=neutral, PublicKeyToken=null">
       <HintPath>..\..\packages\XLabs.Platform.2.0.5679\lib\Xamarin.iOS10\XLabs.Platform.iOS.dll</HintPath>
-      <Private>True</Private>
     </Reference>
-    <Reference Include="XLabs.Serialization, Version=2.0.5679.29810, Culture=neutral, PublicKeyToken=d65109b36e5040e4, processorArchitecture=MSIL">
+    <Reference Include="XLabs.Serialization, Version=2.0.5679.29810, Culture=neutral, PublicKeyToken=d65109b36e5040e4">
       <HintPath>..\..\packages\XLabs.Serialization.2.0.5679\lib\Xamarin.iOS10\XLabs.Serialization.dll</HintPath>
-      <Private>True</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>

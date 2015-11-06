@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIRequiresFullScreen</key>
+	<true/>
 	<key>UIDeviceFamily</key>
 	<array>
 		<integer>1</integer>
@@ -22,7 +24,7 @@
 	<key>CFBundleIdentifier</key>
 	<string>com.xlent.tidshantering</string>
 	<key>CFBundleVersion</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>CFBundleIconFiles</key>
 	<array>
 		<string>Icon-72@2x.png</string>
@@ -42,7 +44,7 @@
 		<string>Icon-Small.png</string>
 	</array>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>UIMainStoryboardFile</key>
 	<string>LaunchScreen</string>
 	<key>UIStatusBarHidden~ipad</key>
@@ -57,5 +59,9 @@
 			<false/>
 		</dict>
 	</dict>
+	<key>UIMainStoryboardFile~ipad</key>
+	<string>LaunchScreen</string>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
 </dict>
 </plist>
