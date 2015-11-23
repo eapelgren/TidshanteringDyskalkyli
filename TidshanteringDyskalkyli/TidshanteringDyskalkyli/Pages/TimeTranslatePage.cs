@@ -203,7 +203,7 @@ namespace TidshanteringDyskalkyli.Pages
                             {
                                 CalculatedTimeLabel.TextColor = Color.Black;
                                 CalculatedTimeLabel.Opacity = 1;
-                                ShowClockButton.IsEnabled = true;
+                                //ShowClockButton.IsEnabled = true;
                             });
                     
                         }
@@ -211,7 +211,7 @@ namespace TidshanteringDyskalkyli.Pages
                         {
                             CalculatedTimeLabel = null;
                             CalculateButton = null;
-                            ShowClockButton = null;
+                            //ShowClockButton = null;
                         }
                         Debug.WriteLine(timeObject.Hour);
                         Device.BeginInvokeOnMainThread(() =>
@@ -303,7 +303,7 @@ namespace TidshanteringDyskalkyli.Pages
                     Children =
                     {
                         CalculatedTimeLabel,
-                        ShowClockButton
+                        //ShowClockButton
                     },
                     Padding = new Thickness(5, 5, 5, 5),
                     Orientation = StackOrientation.Horizontal,
@@ -314,30 +314,30 @@ namespace TidshanteringDyskalkyli.Pages
         }
 
 
-        private Button _showClockButton;
+        //private Button _showClockButton;
         private Picker _halfScroll;
         private View _hourScroll;
 
-        public Button ShowClockButton
-        {
-            get
-            {
-                return _showClockButton ??( _showClockButton = new Button
-                {
-                    Text = "Klockur",
-                    Image = "128/resizedimage.png",
-                    HorizontalOptions = LayoutOptions.Center,
-                    //MinimumWidthRequest = 200,
-                    WidthRequest = 100,
-                    IsEnabled = false,
-                    Command = new Command(async () =>
-                    {
-                       await DisplayAlert("Inte implementerat", "Kommer senare", "Cancel");
-                    })
-                });
-            }
-            set { _showClockButton = value; }
-        }
+        //public Button ShowClockButton
+        //{
+        //    get
+        //    {
+        //        return _showClockButton ??( _showClockButton = new Button
+        //        {
+        //            Text = "Klockur",
+        //            Image = "128/resizedimage.png",
+        //            HorizontalOptions = LayoutOptions.Center,
+        //            //MinimumWidthRequest = 200,
+        //            WidthRequest = 100,
+        //            IsEnabled = false,
+        //            Command = new Command(async () =>
+        //            {
+        //               await DisplayAlert("Inte implementerat", "Kommer senare", "Cancel");
+        //            })
+        //        });
+        //    }
+        //    set { _showClockButton = value; }
+        //}
 
         public ClockViewModel vm { get; set; }
     }

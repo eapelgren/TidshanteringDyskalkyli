@@ -173,20 +173,20 @@ namespace TidshanteringDyskalkyli.Pages
             }
         }
 
-        public Button ShowClockButton
-        {
-            get
-            {
-                return new Button
-                {
-                    Text = "Klockur",
-                    Image = "128/resizedimage.png",
-                    HorizontalOptions = LayoutOptions.Center,
-                    //MinimumWidthRequest = 200,
-                    WidthRequest = 100
-                };
-            }
-        }
+        //public Button ShowClockButton
+        //{
+        //    get
+        //    {
+        //        return new Button
+        //        {
+        //            Text = "Klockur",
+        //            Image = "128/resizedimage.png",
+        //            HorizontalOptions = LayoutOptions.Center,
+        //            //MinimumWidthRequest = 200,
+        //            WidthRequest = 100
+        //        };
+        //    }
+        //}
 
         public Button ResetButton
         {
