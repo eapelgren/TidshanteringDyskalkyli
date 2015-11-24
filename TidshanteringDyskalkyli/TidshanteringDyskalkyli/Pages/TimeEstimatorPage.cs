@@ -66,7 +66,8 @@ namespace TidshanteringDyskalkyli.Pages
                 return _resetButtonContentView ?? (_resetButtonContentView = new ContentView
                 {
                     Content = ResetButton,
-                    Padding = new Thickness(10, 0, 10, 0)
+                    Padding = new Thickness(10, 0, 10, 0),
+					WidthRequest = 240
                 });
             }
             set { _resetButtonContentView = value; }

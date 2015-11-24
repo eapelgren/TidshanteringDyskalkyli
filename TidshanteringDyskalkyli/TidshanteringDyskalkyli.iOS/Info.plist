@@ -18,13 +18,13 @@
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
 	<key>MinimumOSVersion</key>
-	<string>9.1</string>
+	<string>8.3</string>
 	<key>CFBundleDisplayName</key>
 	<string>Tidshantering</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.xlent.tidshantering</string>
 	<key>CFBundleVersion</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>CFBundleIconFiles</key>
 	<array>
 		<string>Icon-72@2x.png</string>
@@ -44,7 +44,7 @@
 		<string>Icon-Small.png</string>
 	</array>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>UIMainStoryboardFile</key>
 	<string>LaunchScreen</string>
 	<key>UIStatusBarHidden~ipad</key>
