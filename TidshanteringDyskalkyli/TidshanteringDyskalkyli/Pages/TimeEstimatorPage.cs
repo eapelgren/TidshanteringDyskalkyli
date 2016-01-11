@@ -67,7 +67,7 @@ namespace TidshanteringDyskalkyli.Pages
                 {
                     Content = ResetButton,
                     Padding = new Thickness(10, 0, 10, 0),
-					WidthRequest = 240
+					WidthRequest = 150,
                 });
             }
             set { _resetButtonContentView = value; }
@@ -212,7 +212,12 @@ namespace TidshanteringDyskalkyli.Pages
                         MinuteDurationPicker.BackgroundColor = Color.White;
                         StartTimePicker.BackgroundColor = Color.White;
                         EndTimePicker.BackgroundColor = Color.White;
-                    })
+                    }),
+                    BackgroundColor = Colors.RedColor,
+                    WidthRequest = 150,
+                    HorizontalOptions = LayoutOptions.Center,
+                    VerticalOptions = LayoutOptions.Center
+
                 };
             }
         }
